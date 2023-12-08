@@ -58,8 +58,8 @@ namespace iffnsStuff.iffnsVRCStuff.iffnsMapDisplay
             Vector3 transformPosition = worldLocation.position;
 
             Vector3 position01 = new Vector3(
-                (transformPosition.x + originOffset.x) * invertedMapSize.x,
-                (transformPosition.z + originOffset.z) * invertedMapSize.y,
+                (transformPosition.x - originOffset.x) * invertedMapSize.x,
+                (transformPosition.z - originOffset.z) * invertedMapSize.y,
                 0
                 );
 
