@@ -87,14 +87,14 @@ namespace iffnsStuff.iffnsVRCStuff.iffnsMapDisplay
         //UI events
         public void ZoomIn()
         {
-            currentInvertedZoomLevel *= 1.25f;
+            currentInvertedZoomLevel *= 0.8f;
 
             LinkedMaterial.SetFloat(windowSizeReference, currentInvertedZoomLevel);
         }
 
         public void ZoomOut()
         {
-            currentInvertedZoomLevel *= 0.8f;
+            currentInvertedZoomLevel *= 1.25f;
 
             LinkedMaterial.SetFloat(windowSizeReference, currentInvertedZoomLevel);
         }
